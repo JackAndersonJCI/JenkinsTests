@@ -7,7 +7,9 @@ pipeline {
                 echo 'Hello World'
                 sh '''
                     pwd
-                    ls
+                    uname -a
+                    sudo lshw -short
+                    lscpu
                     '''
             }
         }
