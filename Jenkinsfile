@@ -8,7 +8,6 @@ pipeline {
                 sh '''
                     pwd
                     uname -a
-                    sudo lshw -short
                     lscpu
                     '''
             }
