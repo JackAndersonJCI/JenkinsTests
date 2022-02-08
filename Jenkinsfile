@@ -1,20 +1,18 @@
 pipeline {
     agent any
-    
+
     stages {
         stage('Hello') {
-            node("Linux"){
-                steps {
+            steps {
+                node("Linux"){
                     echo 'Hello World'
                     sh '''
                         pwd
                         ls
                         '''
                 }
-            }
 
-            node("Windows"){
-                steps {
+                node("Windows"){
                     echo 'Hello World'
                     bat '''
                         pwd
