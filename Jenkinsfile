@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
 
     stages {
@@ -22,4 +22,11 @@ pipeline {
             }
         }
     }
+}*/
+node("Linux"){
+    echo 'Hello World'
+    sh '''
+        pwd
+        ls
+        '''
 }
