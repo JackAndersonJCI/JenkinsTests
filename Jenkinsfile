@@ -8,7 +8,8 @@ pipeline {
             steps {
                 echo 'Hello World'
                 sh '''
-                    echo 'It is currently' date
+                    currentDate=`date`
+                    echo It is currently $currentDate
                     pwd
                     uname -a
                     lscpu
