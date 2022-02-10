@@ -12,7 +12,7 @@ pipeline {
                     '''
                 node("Windows"){
                     bat '''
-                        pwd
+                        echo The current directory is %CD%
                         '''
                 }
             }
