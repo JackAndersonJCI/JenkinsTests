@@ -10,6 +10,11 @@ pipeline {
                     uname -a
                     lscpu
                     '''
+                node("Windows"){
+                    bat '''
+                        pwd
+                        '''
+                }
             }
         }
     }
