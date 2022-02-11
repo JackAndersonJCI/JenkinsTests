@@ -14,12 +14,12 @@ pipeline {
                     uname -a
                     lscpu
                     '''
-                node("Windows"){
+                /*node("Windows"){
                     bat '''
                         echo It is now %date% %time%
                         echo The current directory is %CD%
                         '''
-                }
+                }*/
             }
         }
     }
